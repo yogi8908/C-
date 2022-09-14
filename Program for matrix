@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int row,column;
+    cin>>row>>column;
+    cout<<"print the number of array";
+    for(int i=0;i<row ;i++)
+    {
+        for(int j=0;j<column;j++){
+            cin>>row>>column;
+        }
+    }
+      for(int i=0;i<row ;i++)
+    {
+        for(int j=0;j<column;j++){
+            cout>row>>column<<"";
+        }
+    }
+	// your code goes here
+	return 0;
+}
