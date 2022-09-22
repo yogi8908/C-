@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int binarysearch(int arr[],int key,int size);
+{
+int start=0;
+int end=(size-1);
+int mid=(size+end)/2;
+while(start<=key)
+{
+    if(arr[mid]==key)
+    {
+    return mid;
+    }
+    if(key>arr[mid])
+    
+    {
+    start=mid+1;    
+    }
+    if(key<arr[mid])
+    {
+        end=mid-1;
+    }
+    mid=size+end/2;
+   }
+   return -1;
+}
+
+int main()
+ {
+    int even[7]={3,5,4,7,9,2,1};
+    int odd[4]={4,6,55,7};
+    int  evenindex=binarysearch(even,5,9);
+    cout<<"index of 9"<<evenindex<<endl;return 0;
+}
+    
+    
+
+
+
